@@ -73,7 +73,4 @@ package() {
   ln -s "${SHIP_PREFIX}/Ghostship" "${pkgdir}/usr/bin/Ghostship"
   install -Dm644 "${srcdir}/ghostship.desktop" -t "${pkgdir}/usr/share/applications"
   install -Dm644 logo.png "${pkgdir}/usr/share/pixmaps/ghostship.png"
-
-  # Copy game documentation
-  install -Dm644 "README.md" "${pkgdir}/usr/share/doc/ghostship/README.md"
 }
