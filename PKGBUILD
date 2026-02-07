@@ -74,11 +74,6 @@ package() {
   install -Dm644 "${srcdir}/ghostship.desktop" -t "${pkgdir}/usr/share/applications"
   install -Dm644 logo.png "${pkgdir}/usr/share/pixmaps/ghostship.png"
 
-  # Licenses (HarbourMasters libraries and port source code are MIT)
-  install -Dm644 "LICENSE.md" "${pkgdir}/usr/share/licenses/ghostship/LICENSE.md"
-  install -Dm644 "libultraship/LICENSE" "${pkgdir}/usr/share/licenses/ghostship/libultraship-LICENSE"
-  install -Dm644 "Torch/LICENSE" "${pkgdir}/usr/share/licenses/ghostship/torch-LICENSE"
-
   # Copy game documentation
   install -Dm644 "README.md" "${pkgdir}/usr/share/doc/ghostship/README.md"
 }
