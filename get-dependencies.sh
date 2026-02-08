@@ -42,6 +42,7 @@ cmake --build build --config Release --target GeneratePortO2R
 
 mkdir -p ./AppDir/bin
 mv -v build/assets ./AppDir/bin
+ls build/
 mv -v build/Ghostship ./AppDir/bin
 mv -v build/config.yml ./AppDir/bin
 mv -v build/ghostship.o2r ./AppDir/bin
