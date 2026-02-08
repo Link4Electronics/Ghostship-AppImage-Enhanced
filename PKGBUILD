@@ -70,7 +70,7 @@ package() {
         "${srcdir}/gamecontrollerdb.txt"
 
   # Link executable to /usr/bin, add to desktop entry & icons
-  ln -s "${SHIP_PREFIX}/Ghostship" "${pkgdir}/usr/bin/Ghostship"
+  #ln -s "${SHIP_PREFIX}/Ghostship" "${pkgdir}/usr/bin/Ghostship"
   install -Dm644 "${srcdir}/ghostship.desktop" -t "${pkgdir}/usr/share/applications"
   install -Dm644 logo.png "${pkgdir}/usr/share/pixmaps/ghostship.png"
 }
