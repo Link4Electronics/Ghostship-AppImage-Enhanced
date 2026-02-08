@@ -11,7 +11,6 @@ export ICON=/usr/share/pixmaps/ghostship.png
 export DEPLOY_OPENGL=1
 
 # Deploy dependencies
-#quick-sharun /usr/bin/Ghostship /usr/bin/zenity
 quick-sharun ./AppDir/bin/* /usr/bin/zenity
 
 # Additional changes can be done in between here
