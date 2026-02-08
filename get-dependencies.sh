@@ -20,7 +20,7 @@ echo "Making stable build of Ghostship..."
 echo "---------------------------------------------------------------"
 REPO="https://github.com/HarbourMasters/Ghostship"
 VERSION="$(git ls-remote --tags --sort="v:refname" "$REPO" | tail -n1 | sed 's/.*\///; s/\^{}//')"
-git clone --branch v"$VERSION" --single-branch --recursive --depth 1 "$REPO" ./Ghostship
+git clone --branch "$VERSION" --single-branch --recursive --depth 1 "$REPO" ./Ghostship
 echo "$VERSION" > ~/version
 
 cd ./Ghostship
